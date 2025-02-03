@@ -7,8 +7,7 @@ from io import BytesIO
 
 from src.st_style import apply_prod_style
 
-
-# apply_prod_style(st)  # NOTE: Uncomment this for production!
+apply_prod_style(st)  # NOTE: Uncomment this for production!
 
 def image_download_button(pil_image, filename: str, fmt: str, label="Download"):
     if fmt not in ["jpg", "png"]:
