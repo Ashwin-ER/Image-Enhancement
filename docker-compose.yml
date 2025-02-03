@@ -1,0 +1,13 @@
+---
+version: '3'
+services:
+  st-photo-low-light-enhance:
+    build: .
+    container_name: st-photo-low-light-enhance
+    restart: unless-stopped
+    ports:
+    - 51005:8501
+    volumes:
+    - .:/app
+    environment:
+    - TZ=Asia/Jakarta
